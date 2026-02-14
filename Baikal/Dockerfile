@@ -12,14 +12,14 @@ RUN apk add unzip && unzip -q baikal-$VERSION.zip
 FROM nginx:alpine
 
 RUN apk add --no-cache                \
-            php                       \
-            php-curl                 \
-            php-fpm                \
-            php-mbstring           \
-            php-mysql              \
-            php-pgsql              \
-            php-sqlite3            \
-            php-xml                \
+            php85                       \
+            php85-curl                 \
+            php85-fpm                \
+            php85-mbstring           \
+            php85-mysql              \
+            php85-pgsql              \
+            php85-sqlite3            \
+            php85-xml                \
             sqlite3                \
             msmtp                 
 
