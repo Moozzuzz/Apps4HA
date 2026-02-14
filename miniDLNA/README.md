@@ -34,7 +34,7 @@ Set this to the directory you want scanned.
                 [-s serial] [-m model_number]
                 [-w url] [-r] [-R] [-L] [-S] [-V] [-h]
 ```
-For more info on options: [Debian man page](https://manpages.debian.org/testing/minidlna/minidlnad.1.en.html) or [uex.se man page](https://man.uex.se/8/minidlnad)
+For more info on options: [Debian man page](https://manpages.debian.org/testing/minidlna/minidlnad.1.en.html) or [uex.se man page](https://man.uex.se/8/minidlnad).
 
 Notes:
         Notify interval is in seconds. Default is 895 seconds.
