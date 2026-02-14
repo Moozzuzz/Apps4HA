@@ -1,9 +1,8 @@
-name: miniDLNA,
+name: "miniDLNA for Home Assistant (HA)"
 version: "0.1"
 description: miniDLNA
 slug: minidlna
 
-# tot aan de echte locatie
 url: https://github.com/Moozzuzz/HA-addons
 arch: 
   - aarch64
