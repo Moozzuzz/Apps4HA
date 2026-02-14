@@ -1,7 +1,7 @@
 ## miniDLNA for Home Assistant (HA)
 ## Description
 
-This addon provide a container for Home Assistant with miniDLNA. Based on work from [Drize](https://github.com/drize) & [Cavaliere78](https://github.com/cavaliere78).
+This addon provide a container for Home Assistant with miniDLNA. Based on work from [Drize](https://github.com/drize) & [Cavaliere78](https://github.com/cavaliere78). Current minidlna-version can be checked in the [alpine package details](https://pkgs.alpinelinux.org/package/edge/community/x86/minidlna).
 
 ## Installation
 
@@ -27,12 +27,14 @@ Set this to the directory you want scanned.
 
   
 ### Option `options`
-Usage:
+```Usage:
                 [-d] [-v] [-f config_file] [-p port]
                 [-i network_interface] [-u uid_to_run_as]
                 [-t notify_interval] [-P pid_filename]
                 [-s serial] [-m model_number]
                 [-w url] [-r] [-R] [-L] [-S] [-V] [-h]
+```
+For more info on options: [Debian man page](https://manpages.debian.org/testing/minidlna/minidlnad.1.en.html) or [uex.se man page](https://man.uex.se/8/minidlnad)
 
 Notes:
         Notify interval is in seconds. Default is 895 seconds.
