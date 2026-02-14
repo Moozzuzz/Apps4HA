@@ -23,8 +23,8 @@ RUN apk add --no-cache                \
             sqlite3                \
             msmtp                 
 
-RUN sed -i 's/www-data/nginx/g' /etc/php8/php-fpm.d/www.conf && \
-    sed -i 's/^listen = .*/listen = \/var\/run\/php-fpm.sock/' /etc/php8/php-fpm.d/www.conf
+RUN sed -i 's/www-data/nginx/g' /etc/php85/php-fpm.d/www.conf && \
+    sed -i 's/^listen = .*/listen = \/var\/run\/php-fpm.sock/' /etc/php85/php-fpm.d/www.conf
 
 ARG BUILD_DATE
 ARG VERSION
