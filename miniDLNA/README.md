@@ -1,11 +1,11 @@
 ## miniDLNA for Home Assistant (HA)
 ## Description
 
-This addon provide a container for Home Assistant with miniDLNA. Based on work from Drize & Cavaliere78.
+This addon provide a container for Home Assistant with miniDLNA. Based on work from [Drize](https://github.com/drize) & [Cavaliere78](https://github.com/cavaliere78).
 
 ## Installation
 
-Copy the url of this addon into "Supervisor" -> "Addon Store" -> "Add New repository URL". Then search for minidlna, select the addon and install it. 
+Copy the url of [this repository](https://github.com/Moozzuzz/HA-addons) into "Supervisor" -> "Addon Store" -> "Add New repository URL". Then search for minidlna, select the addon and install it. 
 
 ## Example configuration 
 ```yaml
