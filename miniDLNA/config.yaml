@@ -19,7 +19,7 @@ map:
   - media:rw
 
 privileged: 
-  NET_ADMIN
+  - NET_ADMIN
 
 devices: 
   - /dev/net/tun
