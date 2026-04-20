@@ -1,4 +1,4 @@
-# HA-addons
+# Apps 4 Home Assistant (formerly called HA-addons)
 Addons for home-assistant
 
 [miniDLNA](https://github.com/Moozzuzz/HA-addons/tree/main/miniDLNA) is a lightweight DLNA server. 
