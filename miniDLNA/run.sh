@@ -1,4 +1,6 @@
-#!/usr/bin/with-contenv bashio
+#!/usr/bin/env bash
+source /usr/lib/bashio/bashio.sh
+
 bashio::log.info "Start"
 
 CONFIG_PATH=/data/options.json
@@ -27,4 +29,5 @@ sed -i "s/%%port%%/${ingress_port}/g" /etc/minidlna.conf
 
 OPTIONS="$(bashio::config 'options')"
 bashio::log.info "Starting MiniDLNA..."
-usr/sbin/minidlnad $OPTIONS
+
+exec /usr/sbin/minidlnad $OPTIONS
