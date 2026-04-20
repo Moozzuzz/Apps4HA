@@ -1,5 +1,5 @@
 name: "miniDLNA for Home Assistant (HA)"
-version: "0.1"
+version: "0.1.1a"
 description: miniDLNA
 slug: minidlna
 
