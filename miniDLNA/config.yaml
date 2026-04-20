@@ -41,7 +41,9 @@ panel_title: miniDLNA
 options:
   media_dir: /media;/share
   options: -d
+  friendly_name: HA miniDLNA
 
 schema: 
   media_dir: str
   options: str
+  friendly_name: str
