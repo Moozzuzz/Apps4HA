@@ -11,9 +11,11 @@ declare ingress_interface
 declare ingress_port
 declare ingress_entry
 
+bashio::log.info "start ingress declaraties"
 ingress_port=$(bashio::addon.ingress_port)
 ingress_interface=$(bashio::addon.ip_address)
 ingress_entry=$(bashio::addon.ingress_entry)
+bashio::log.info "ingress declaratie klaar"
 
 MEDIA_DIR="$(bashio::config 'media_dir')"
 dirlist=$(echo $MEDIA_DIR | tr ";" "\n")
@@ -30,6 +32,6 @@ done
 sed -i "s/^#\(friendly_name\).*/\1=$friendly_name/" /etc/minidlna.conf
 
 OPTIONS="$(bashio::config 'options')"
-bashio::log.info "Starting MiniDLNA..."
+bashio::log.info "Starting miniDLNA..."
 
 exec /usr/sbin/minidlnad $OPTIONS
