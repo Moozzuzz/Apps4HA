@@ -5,6 +5,7 @@ bashio::log.info "Start"
 
 CONFIG_PATH=/data/options.json
 SYSTEM_USER=/data/system_user.json
+bashio::log.info "datapath loaded"
 
 declare ingress_interface
 declare ingress_port
