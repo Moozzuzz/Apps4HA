@@ -1,4 +1,4 @@
-include <tunables/global>
+#include <tunables/global>
 
 profile minidlna-addon flags=(attachdisconnected,mediatedeleted) {
     #include <abstractions/base>
