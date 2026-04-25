@@ -1,0 +1,34 @@
+include <tunables/global>
+
+profile minidlna-addon flags=(attachdisconnected,mediatedeleted) {
+    #include <abstractions/base>
+    #include <abstractions/nameservice>
+    #include <abstractions/user-tmp>
+    #include <abstractions/ssl_certs>
+
+    network inet udp,
+    network inet tcp,
+
+    /media/ r,
+    /share/ r,
+    @{HOME}/media/ r,
+    @{HOME}/share/ r,
+
+    /etc/minidlna.conf r,
+    @{HOME}/.minidlna/minidlna.conf r,
+
+    /var/cache/minidlna/ rwk,
+    @{HOME}/.minidlna/cache/ rwk,
+    /var/log/minidlna.log rw,
+
+    /tmp/ rw,
+
+    /usr/bin/ffmpeg ix,
+
+    /proc/* r,
+    /sys/ r,
+
+    # capability netbindservice,
+
+    deny / w,
+}
