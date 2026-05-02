@@ -1,1 +1,5 @@
+#include <tunables/global>
 
+profile minidlna-addon flags=(complain){
+
+}
