@@ -10,7 +10,7 @@ bashio::log.info "datapath loaded"
 declare ingress_interface
 declare ingress_port
 declare ingress_entry
-curl -s -H "Authorization: Bearer $SUPERVISOR_TOKEN" http://supervisor/core/info
+curl -s -H "Authorization: Bearer ${SUPERVISOR_TOKEN}" http://supervisor/core/info
 
 bashio::log.info "start ingress declaraties"
 ingress_port=$(bashio::addon.ingress_port)
