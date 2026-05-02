@@ -1,8 +1,22 @@
 #!/usr/bin/with-contenv bashio
 source /usr/lib/bashio/bashio.sh
 
-bashio::log.warning "START"
+bashio::log.warning "
+START
+"
 bashio::log.info "Starting miniDLNA entrypoint"
+
+bashio::log.warning "Setting variables"
+CONFIG_PATH=/data/options.json
+SYSTEM_USER=/data/system_user.json
+
+MEDIA_DIR="$(bashio::config 'media_dir')"
+dirlist=$(echo $MEDIA_DIR | tr ";" "\n")
+for dir in $dirlist
+do
+    echo "> setting media dir: [media_dir=$dir]"
+	sed -i "/XXXmedia_dirXXX/a \media_dir=$dir" /etc/minidlna.conf
+done
 
 # Wacht op SUPERVISOR_TOKEN veilig
 TIMEOUT=30
@@ -10,6 +24,7 @@ elapsed=0
 while bashio::var.is_empty "${SUPERVISOR_TOKEN:-}" && [ "$elapsed" -lt "$TIMEOUT" ]; do
   sleep 1
   elapsed=$((elapsed + 1))
+  bashio::log.info "${elapsed}"
 done
 
 if bashio::var.is_empty "${SUPERVISOR_TOKEN:-}"; then
