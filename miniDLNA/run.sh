@@ -1,5 +1,6 @@
-#!/usr/bin/env bashio
+#!/usr/bin/with-contenv bashio
 source /usr/lib/bashio/bashio.sh
+
 bashio::log.warning "START"
 bashio::log.info "Starting miniDLNA entrypoint"
 
