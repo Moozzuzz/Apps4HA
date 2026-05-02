@@ -1,5 +1,5 @@
 name: "miniDLNA for Home Assistant (HA)"
-version: "0.1.1g-tst2"
+version: "0.1.1g-tst3"
 description: This app (~addon) provides you with the latest miniDLNA on Alpine and is fully in line with the latest Home-assistant App guidelines/architectures. 
 slug: minidlna
 
