@@ -1,13 +1,14 @@
 name: "miniDLNA for Home Assistant (HA)"
-version: 0.1.1g-tst7
-description: This app (~addon) provides you with the latest miniDLNA on Alpine and is fully in line with the latest Home-assistant App guidelines/architectures. 
+version: "0.1.1g-tst7"
+description: "This app (~addon) provides you with the latest miniDLNA on Alpine..."
 slug: minidlna
 
 url: https://github.com/Moozzuzz/HA-addons
-arch: 
+arch:
   - aarch64
   - amd64
-ports: 
+
+ports:
   1900/udp: 1900
 
 map:
@@ -17,36 +18,38 @@ map:
   - share:rw
   - backup:rw
   - media:rw
+
 homeassistant_api: true
-#hassio_api: true
+# hassio_api: false   # niet beide tegelijk
 hassio_role: homeassistant
-privileged: 
+
+privileged:
   - NET_ADMIN
   - SYS_ADMIN
   - DAC_READ_SEARCH
-devices: 
+
+devices:
   - /dev/net/tun
 
-host_network: "true"
+host_network: true
 
 startup: services
 init: false
 boot: auto
 backup: cold
 
-ingress: "true"
-ingress_port: "9998"
+ingress: true
+ingress_port: 9998
 webui: http://[HOST]:[PORT:9998]
 panel_icon: mdi:dlna
 panel_title: miniDLNA
 
-#user config
 options:
   media_dir: /media;/share
   options: -d
   friendly_name: HA miniDLNA
 
-schema: 
+schema:
   media_dir: str
   options: str
   friendly_name: str
