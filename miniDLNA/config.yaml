@@ -22,7 +22,8 @@ hassio_api: true
 hassio_role: homeassistant
 privileged: 
   - NET_ADMIN
-
+  - SYS_ADMIN
+  - DAC_READ_SEARCH
 devices: 
   - /dev/net/tun
 
