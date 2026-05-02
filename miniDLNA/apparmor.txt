@@ -1,6 +1,6 @@
 #include <tunables/global>
 
-profile minidlna-addon flags=(attachdisconnected,mediatedeleted) {
+profile minidlna-addon flags=(attach_disconnected,mediate_deleted) {
     #include <abstractions/base>
     #include <abstractions/nameservice>
     #include <abstractions/user-tmp>
