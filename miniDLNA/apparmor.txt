@@ -23,6 +23,7 @@ profile minidlna-addon flags=(complain,attach_disconnected,mediate_deleted) {
 
     /tmp/ rw,
     /var/run/supervisor.sock rw,
+    /var/run/supervisor.sock wklx,
 
     /usr/bin/ffmpeg ix,
 
