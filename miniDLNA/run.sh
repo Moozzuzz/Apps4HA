@@ -1,7 +1,7 @@
 #!/usr/bin/env bashio
 source /usr/lib/bashio/bashio.sh
-
-bashio::log.info "Starten miniDLNA entrypoint"
+bashio::log.warning "START"
+bashio::log.info "Starting miniDLNA entrypoint"
 
 # Wacht op SUPERVISOR_TOKEN veilig
 TIMEOUT=30
