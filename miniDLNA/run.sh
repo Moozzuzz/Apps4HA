@@ -23,7 +23,7 @@ if [ -z "${SUPERVISOR_TOKEN:-}" ]; then
 else
   echo "SUPERVISOR_TOKEN present"
 fi
-echo curl -i -H "Authorization: Bearer ${SUPERVISOR_TOKEN:-}" http://supervisor/core/info
+curl -i -H "Authorization: Bearer ${SUPERVISOR_TOKEN:-}" http://supervisor/core/info
 
 # Wacht op SUPERVISOR_TOKEN veilig
 TIMEOUT=30
