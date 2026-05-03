@@ -38,9 +38,10 @@ init: false
 boot: auto
 backup: cold
 
-ingress: true
-ingress_port: 9998
-webui: http://[HOST]:[PORT:9998]
+# ingress: false # true
+# ingress_port: 9998
+# webui: http://[HOST]:[PORT:9998]
+
 panel_icon: mdi:dlna
 panel_title: miniDLNA
 
