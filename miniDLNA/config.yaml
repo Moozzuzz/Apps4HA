@@ -1,5 +1,5 @@
 name: "miniDLNA for Home Assistant (HA)"
-version: 0.1.1g-tst16
+version: 0.1.1g-tst17
 description: "This app (~addon) provides you with the latest miniDLNA on Alpine..."
 slug: minidlna
 
@@ -19,8 +19,9 @@ map:
   - backup:rw
   - media:rw
 
-homeassistant_api: true
-# hassio_api: false   # niet beide tegelijk
+#homeassistant_api: true
+hassio_api: true
+# niet beide tegelijk
 hassio_role: homeassistant
 
 privileged:
