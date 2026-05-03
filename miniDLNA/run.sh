@@ -1,4 +1,4 @@
-#!/usr/bin/env bashio
+#!/usr/bin/env bash
 source /usr/lib/bashio/bashio.sh
 
 bashio::log.warning "
