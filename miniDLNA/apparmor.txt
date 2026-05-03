@@ -27,8 +27,6 @@ profile minidlna-addon flags=(complain) {
 
     /usr/bin/ffmpeg ix,
 
-    /proc/* r,
-    /sys/ r,
-
-    # capability netbindservice,
+    /proc/** r,
+    /sys/ r
 }
