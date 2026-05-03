@@ -3,7 +3,7 @@ version: 0.1.1g-tst13
 description: "This app (~addon) provides you with the latest miniDLNA on Alpine..."
 slug: minidlna
 
-url: https://github.com/Moozzuzz/HA-addons
+url: https://github.com/Moozzuzz/Apps4HA/tree/main/miniDLNA
 arch:
   - aarch64
   - amd64
