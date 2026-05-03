@@ -17,6 +17,13 @@ do
     echo "> setting media dir: [media_dir=$dir]"
 	sed -i "/XXXmedia_dirXXX/a \media_dir=$dir" /etc/minidlna.conf
 done
+# veilige check (voorkomt Unbound variable)
+if [ -z "${SUPERVISOR_TOKEN:-}" ]; then
+  echo "SUPERVISOR_TOKEN not set"
+else
+  echo "SUPERVISOR_TOKEN present"
+fi
+echo curl -i -H "Authorization: Bearer ${SUPERVISOR_TOKEN:-}" http://supervisor/core/info
 
 # Wacht op SUPERVISOR_TOKEN veilig
 TIMEOUT=30
