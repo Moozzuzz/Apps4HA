@@ -2,6 +2,7 @@ name: "miniDLNA for Home Assistant (HA)"
 version: 0.1.1g-tst19
 description: "This app (~addon) provides you with the latest miniDLNA on Alpine..."
 slug: minidlna
+stage: experimental
 
 url: https://github.com/Moozzuzz/Apps4HA/tree/main/miniDLNA
 arch:
