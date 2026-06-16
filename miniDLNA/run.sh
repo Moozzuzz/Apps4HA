@@ -10,7 +10,7 @@ bashio::log.warning "Setting variables"
 CONFIG_PATH=/data/options.json
 SYSTEM_USER=/data/system_user.json
 
-find / -type f -name "*minidlnad*"
+# find / -type f -name "*minidlnad*"
 
 bashio::log.warning "Starten miniDLNA daemon"
-exec /usr/sbin/minidlnad -f /etc/minidlna.conf -P /var/run/minidlna.pid
+/usr/sbin/minidlnad -d -f /etc/minidlna.conf
