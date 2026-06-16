@@ -1,5 +1,5 @@
 name: "miniDLNA for Home Assistant (HA)"
-version: 0.1.1g-tst19
+version: 0.1.1g-tst20
 description: "This app (~addon) provides you with the latest miniDLNA on Alpine..."
 slug: minidlna
 stage: experimental
@@ -23,15 +23,15 @@ map:
 #homeassistant_api: true
 hassio_api: true
 # niet beide tegelijk
-hassio_role: homeassistant
+hassio_role: manager
 
 privileged:
   - NET_ADMIN
   - SYS_ADMIN
   - DAC_READ_SEARCH
 
-devices:
-  - /dev/net/tun
+#devices:
+#  - /dev/net/tun
 
 host_network: true
 
@@ -42,6 +42,7 @@ backup: cold
 
 # ingress: false # true
 # ingress_port: 9998
+# ingress_stream: true
 # webui: http://[HOST]:[PORT:9998]
 
 panel_icon: mdi:dlna
