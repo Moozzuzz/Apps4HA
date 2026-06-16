@@ -13,4 +13,4 @@ SYSTEM_USER=/data/system_user.json
 OPTIONS="$(bashio::config 'options')"
 
 bashio::log.warning "Starten miniDLNA daemon"
-/usr/sbin/minidlnad -d -f /etc/minidlna.conf $OPTIONS
+/usr/sbin/minidlnad $OPTIONS
