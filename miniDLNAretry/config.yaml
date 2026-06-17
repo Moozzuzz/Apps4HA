@@ -1,0 +1,57 @@
+name: "miniDLNA for Home Assistant (HA) Retry"
+version: 0.1.1
+description: "DEV - Don't use. Goal: This app (~addon) provides you with the latest miniDLNA on Alpine..."
+slug: minidlna
+stage: experimental
+
+arch:
+  - aarch64
+  - amd64
+
+ports:
+  "1900/udp": 1900
+
+map:
+  - config:rw
+  - ssl:rw
+  - addons:rw
+  - share:rw
+  - backup:rw
+  - media:rw
+
+homeassistant_api: true
+#hassio_api: true
+# niet beide tegelijk
+#hassio_role: homeassistant
+#auth_api: true
+
+privileged:
+  - NET_ADMIN
+
+devices:
+  - /dev/net/tun
+
+#host_network: true
+init: false
+
+#startup: services
+#boot: auto
+#backup: cold
+
+# ingress: false # true
+# ingress_port: 9998
+# ingress_stream: true
+# webui: http://[HOST]:[PORT:9998]
+
+panel_icon: mdi:dlna
+panel_title: miniDLNA
+
+options:
+  media_dir: /media;/share
+  options: -d
+  friendly_name: HA miniDLNA
+
+schema:
+  media_dir: str
+  options: str
+  friendly_name: str
