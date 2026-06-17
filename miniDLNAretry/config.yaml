@@ -9,7 +9,7 @@ arch:
   - amd64
 
 ports:
-  "1900/udp": 1900
+  "1900/udp": 1901
 
 map:
   - config:rw
