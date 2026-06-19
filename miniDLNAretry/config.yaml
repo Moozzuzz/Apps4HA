@@ -42,10 +42,10 @@ options:
   media_dir: /media;/share
   options: -d
   friendly_name: HA miniDLNA
-  http_options: 8200
+  http_port: 8200
 
 schema:
   media_dir: str
   options: str
   friendly_name: str
-  http_options: int
+  http_port: int
