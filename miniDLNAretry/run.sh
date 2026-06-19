@@ -5,4 +5,4 @@ echo "Hello supervisor on port {$HTTP_PORT}!. API-token is:"
 echo $SUPERVISOR_TOKEN
 echo "Above is a token."
 
-exec /user/sbin/minidlna -f /etc/minidlna -P /run/minidlna.pid -d
+exec /usr/sbin/minidlna -f /etc/minidlna -P /run/minidlna.pid -d
