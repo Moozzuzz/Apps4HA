@@ -1,5 +1,5 @@
 name: "miniDLNA for Home Assistant (HA) Retry"
-version: 0.1.1a
+version: 0.1.1a1
 description: "DEV - Don't use. Goal: This app (~addon) provides you with the latest miniDLNA on Alpine..."
 slug: minidlna2
 stage: experimental
