@@ -3,6 +3,7 @@ version: 0.0.1b
 description: "TEST This app (~addon) provides you with the latest miniDLNA on Alpine..."
 slug: minidlna-test
 stage: experimental
+init: false
 
 url: https://github.com/Moozzuzz/Apps4HA/tree/main/miniDLNAretry
 arch:
