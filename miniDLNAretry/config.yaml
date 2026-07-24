@@ -1,5 +1,5 @@
 name: "TEST miniDLNA for Home Assistant (HA)"
-version: 0.0.1c
+version: 0.0.1d
 description: "TEST This app (~addon) provides you with the latest miniDLNA on Alpine..."
 slug: minidlna-test
 stage: experimental
@@ -28,7 +28,7 @@ devices:
   - /dev/net/tun
 
 host_network: true
-
+auth_api: true
 
 ingress: true
 ingress_port: 9998
