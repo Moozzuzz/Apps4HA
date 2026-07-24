@@ -22,12 +22,12 @@
     "options": {
       "media_dir": "/media;/share",
       "options": "-d",
-      "friendly_name": MyminiDLNA
+      "friendly_name": "MyminiDLNA"
     },
     "schema": {
       "media_dir": "str",
       "options": "str",
-      "friendly_name": str
+      "friendly_name": "str"
     },
         "ingress_port": 9998,
 	"webui": "http://[HOST]:[PORT:9998]",
