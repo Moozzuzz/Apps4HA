@@ -1,5 +1,5 @@
 name: "TEST miniDLNA for Home Assistant (HA)"
-version: 0.0.1b
+version: 0.0.1c
 description: "TEST This app (~addon) provides you with the latest miniDLNA on Alpine..."
 slug: minidlna-test
 stage: experimental
