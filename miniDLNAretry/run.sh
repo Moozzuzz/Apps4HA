@@ -1,8 +1,30 @@
 #!/usr/bin/with-contenv bashio
-HTTP_PORT=$(bashio::config 'http_port')
+bashio::log.info "Start"
 
-echo "Hello supervisor on port {$HTTP_PORT}!. API-token is:"
-echo $SUPERVISOR_TOKEN
-echo "Above is a token."
+CONFIG_PATH=/data/options.json
+SYSTEM_USER=/data/system_user.json
 
-exec /usr/bin/minidlna -f /etc/minidlna -P /run/minidlna.pid -d
+declare ingress_interface
+declare ingress_port
+declare ingress_entry
+
+ingress_port=$(bashio::addon.ingress_port)
+ingress_interface=$(bashio::addon.ip_address)
+ingress_entry=$(bashio::addon.ingress_entry)
+
+MEDIA_DIR="$(bashio::config 'media_dir')"
+dirlist=$(echo $MEDIA_DIR | tr ";" "\n")
+
+for dir in $dirlist
+do
+    echo "> setting media dir: [media_dir=$dir]"
+	sed -i "/XXXmedia_dirXXX/a \media_dir=$dir" /etc/minidlna.conf
+done
+#MEDIA_DIR2="$(bashio::config 'media_dir2')"
+#sed -i "s%XXXmedia_dir2XXX%$MEDIA_DIR2%g" /etc/minidlna.conf
+
+sed -i "s/%%port%%/${ingress_port}/g" /etc/minidlna.conf
+
+OPTIONS="$(bashio::config 'options')"
+bashio::log.info "Starting MiniDLNA..."
+usr/sbin/minidlnad $OPTIONS
