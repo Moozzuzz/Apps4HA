@@ -1,4 +1,4 @@
-# Apps 4 HA
+# apps 4 HA
 Apss (formerly addons) for home-assistant
 
 Currently no working addons here. Follow me if you would like to get an update.
