@@ -2,8 +2,13 @@ name: "TEST miniDLNA for Home Assistant (HA)"
 version: 0.0.1d
 description: "TEST This app (~addon) provides you with the latest miniDLNA on Alpine..."
 slug: minidlna-test
+
 stage: experimental
+
+startup: services
 init: false
+boot: auto
+backup: cold
 
 url: https://github.com/Moozzuzz/Apps4HA/tree/main/miniDLNAretry
 arch:
@@ -33,7 +38,7 @@ auth_api: true
 ingress: true
 ingress_port: 9998
 # ingress_stream: true
-webui: "http://[HOST]:[PORT:9998]"
+webui: http://[HOST]:[PORT:9998]
 
 panel_icon: mdi:dlna
 panel_title: miniDLNA
