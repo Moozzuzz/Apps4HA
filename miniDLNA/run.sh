@@ -1,5 +1,5 @@
 #!/usr/bin/with-contenv bashio
-bashio::log.info "Start to run 0.0.1f9"
+bashio::log.info "Start to run 0.0.1j"
 
 CONFIG_PATH=/data/options.json
 SYSTEM_USER=/data/system_user.json
