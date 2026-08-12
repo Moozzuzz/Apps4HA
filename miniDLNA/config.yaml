@@ -35,8 +35,8 @@ devices:
 host_network: true
 auth_api: true
 
-ingress: true
-ingress_port: 9998
+# ingress: true #when enabling: check run.sh as well
+# ingress_port: 9998
 # ingress_stream: true
 # webui: http://[HOST]:[PORT:9998]
 
