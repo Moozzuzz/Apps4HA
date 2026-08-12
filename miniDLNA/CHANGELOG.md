@@ -1,7 +1,10 @@
 # Changelog
 
+## 0.0.1i
+- miniDLNA uses ingress for communication with other apps & HA-instances. So the "webui" is't meant for us humans.
+- General cleaning of all files
+
 ## 0.0.1e
-- Drop ingress support due to miniDLNA versions >=1.3.1 incorrectly suspects DNS rebinding attacks from non local hosts.
 - Drop -d (debug mode) option as standard option 
 - Update readme
 - Update to new format ENV key=value
