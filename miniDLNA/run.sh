@@ -5,6 +5,12 @@ CONFIG_PATH=/data/options.json
 SYSTEM_USER=/data/system_user.json
 VERSION="$(bashio::addon.version)"
 
+declare ingress_port
+ingress_port=$(bashio::addon.ingress_port)
+
+# echo "> setting ingress port "${ingress_port}
+sed -i "s/%%port%%/${ingress_port}/g" /etc/minidlna.conf
+
 OPTIONS="$(bashio::config 'options')"
 
 MEDIA_DIR="$(bashio::config 'media_dir')"
