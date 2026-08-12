@@ -19,9 +19,9 @@ ports:
   1900/udp: 1900
 
 map:
-  - config:rw
+  - homeassistant_config:rw
   - ssl:rw
-  - addons:rw
+  - local_apps:rw
   - share:rw
   - backup:rw
   - media:rw
