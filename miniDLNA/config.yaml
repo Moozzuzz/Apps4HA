@@ -1,5 +1,5 @@
 name: "miniDLNA for Home Assistant (HA)"
-version: 0.0.1e
+version: 0.0.1e1
 description: "This app (~addon) provides you with the latest miniDLNA on Alpine..."
 slug: minidlna
 
@@ -35,17 +35,17 @@ devices:
 host_network: true
 auth_api: true
 
-ingress: false #true
+ingress: false
 # ingress_port: 9998
 # ingress_stream: true
-webui: http://[HOST]:[PORT:9998]
+# webui: http://[HOST]:[PORT:9998]
 
 panel_icon: mdi:dlna
 panel_title: miniDLNA
 
 options:
   media_dir: /media
-  options: 
+  options: -v
   friendly_name: HA miniDLNA
 
 schema:
