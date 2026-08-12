@@ -55,14 +55,14 @@ Set this to the directory you want scanned.
 - `-V` Show the program version and exit.
 - `-v` Verbose output.
 
-#### Defined via configuration (of this app)
+#### Option defined via configuration (of this app)
 - `-p port` Defines port number to listen on.
+- Friendly name on the network
 
 #### Defined by HA
 - `-i interface` Network interface to listen on. Can be specified more than once.
 
-## Credits for miniDLNA (Readymedia)
-- https://sourceforge.net/projects/minidlna/files/minidlna
-
 For more detailed info on options: [Debian man page](https://manpages.debian.org/testing/minidlna/minidlnad.1.en.html) or [uex.se man page](https://man.uex.se/8/minidlnad).
 
+## Credits for miniDLNA (Readymedia)
+- https://sourceforge.net/projects/minidlna/files/minidlna
