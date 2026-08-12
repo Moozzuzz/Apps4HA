@@ -1,5 +1,5 @@
 name: "miniDLNA for Home Assistant (HA)"
-version: 0.0.1f8
+version: 0.0.1f9
 description: "This app (~addon) provides you with the latest miniDLNA on Alpine."
 slug: minidlna
 
@@ -45,7 +45,7 @@ panel_title: miniDLNA
 
 options:
   media_dir: /media
-  options: -d -v
+  options: -d
   friendly_name: HA miniDLNA
 
 schema:
