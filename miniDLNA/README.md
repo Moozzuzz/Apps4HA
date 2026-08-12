@@ -59,12 +59,11 @@ Set this to the directory you want scanned.
 #### Defined via configuration (of this app)
 - `-p port` Defines port number to listen on.
 
-- `-p` Set the listening port.
+## Credits for miniDLNA (Readymedia)
+- https://sourceforge.net/projects/minidlna/files/minidlna
 
 For more detailed info on options: [Debian man page](https://manpages.debian.org/testing/minidlna/minidlnad.1.en.html) or [uex.se man page](https://man.uex.se/8/minidlnad).
 
-## Credits for miniDLNA (Readymedia)
-- https://sourceforge.net/projects/minidlna/files/minidlna
 
 ### Defined by HA
 - `-i interface` Network interface to listen on. Can be specified more than once.
