@@ -17,5 +17,5 @@ do
 done
 
 bashio::log.info "MiniDLNA appversion $VERSION starting..."
-exec usr/sbin/minidlnad $OPTIONS
+exec /usr/sbin/minidlnad $OPTIONS
 bashio::log.info "MiniDLNA launched"
