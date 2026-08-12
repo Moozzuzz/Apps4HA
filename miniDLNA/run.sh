@@ -24,6 +24,7 @@ done
 #sed -i "s%XXXmedia_dir2XXX%$MEDIA_DIR2%g" /etc/minidlna.conf
 
 sed -i "s/%%port%%/${ingress_port}/g" /etc/minidlna.conf
+echo "> setting ingress port s/%%port%%/${ingress_port}/g"
 
 OPTIONS="$(bashio::config 'options')"
 bashio::log.info "Starting MiniDLNA..."
