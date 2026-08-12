@@ -45,7 +45,7 @@ panel_title: miniDLNA
 
 options:
   media_dir: /media
-  options: -v
+  options: -d
   friendly_name: HA miniDLNA
 
 schema:
