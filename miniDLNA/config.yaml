@@ -35,10 +35,10 @@ devices:
 host_network: true
 auth_api: true
 
-ingress: false
-# ingress_port: 9998
+ingress: true
+ingress_port: 9998
 # ingress_stream: true
-# webui: http://[HOST]:[PORT:9998]
+webui: http://[HOST]:[PORT:9998]
 
 panel_icon: mdi:dlna
 panel_title: miniDLNA
