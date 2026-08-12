@@ -6,7 +6,7 @@ slug: minidlna
 stage: experimental
 
 startup: services
-init: true
+init: false
 boot: auto
 backup: cold
 
