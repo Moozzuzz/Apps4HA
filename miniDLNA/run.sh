@@ -3,6 +3,7 @@ bashio::log.info "Start to run"
 
 CONFIG_PATH=/data/options.json
 SYSTEM_USER=/data/system_user.json
+VERSION=$(bashio::addon.version)
 
 # declare ingress_port
 # declare ingress_interface
@@ -25,7 +26,7 @@ do
 done
 
 OPTIONS="$(bashio::config 'options')"
-bashio::log.info "MiniDLNA starting..."
+bashio::log.info "MiniDLNA appversion $VERSION starting..."
 usr/sbin/minidlnad $OPTIONS
 bashio::log.info "MiniDLNA launched"
 
