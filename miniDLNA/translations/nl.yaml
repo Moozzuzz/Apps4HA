@@ -3,11 +3,11 @@ configuration:
   media_dir:
     name: Media folders
     description: >-
-      This option allows you to list the directories with mediafiles in the App (De standaard waarde is _/media_)
+      In deze optie geef je aan welke folders met mediabestanden gebruikt moeten worden (De standaard waarde is `/media`)
   options:
-    name: miniDLNA start opties
+    name: miniDLNA opstart opties
     description: >-
-      See documentation for more info. Standaard waarde is _-d_.
+      See documentation for more info. De standaard waarde is leeg.
   friendly_name: 
     name: Friendly name
-    description: Hoe stelt je miniDLNA zich voor op het netwerk. Standaard waarde is _HA miniDLNA_.
+    description: Hoe stelt je miniDLNA zich voor op het netwerk. De standaardwaarde is `HA miniDLNA`.
