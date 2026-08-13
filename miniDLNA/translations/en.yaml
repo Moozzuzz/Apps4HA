@@ -4,11 +4,11 @@ configuration:
     name: Media directories
     description: >-
       This option allows you to list the directories with mediafiles in the
-      App (default value is _/media_)
+      App (default value is /media)
   options:
     name: miniDLNA launch options
     description: >-
-      See documentation for more info. Default value is _-d_.
+      See documentation for more info. Default no value is "".
   friendly_name: 
     name: Friendly name
-    description: Friendly name of your miniDLNA instance. Default value is _HA miniDLNA_.
+    description: Friendly name of your miniDLNA instance. Default value is `HA miniDLNA`.
