@@ -7,7 +7,7 @@ configuration:
   options:
     name: miniDLNA opstart opties
     description: >-
-      See documentation for more info. De standaard waarde is leeg.
+      Zie tabblad `Info` voor detail informatie. De standaard waarde is leeg.
   friendly_name: 
     name: Friendly name
     description: Hoe stelt je miniDLNA zich voor op het netwerk. De standaardwaarde is `HA miniDLNA`.
