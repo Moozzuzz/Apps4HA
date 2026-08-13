@@ -3,8 +3,7 @@ configuration:
   media_dir:
     name: Media directories
     description: >-
-      This option allows you to list the directories with mediafiles in the
-      App (default value is /media)
+      This option allows you to list the directories with mediafiles in the App (default value is `/media`)
   options:
     name: miniDLNA launch options
     description: >-
