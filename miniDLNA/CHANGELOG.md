@@ -1,5 +1,8 @@
 # Changelog
 
+## 0.0.1k
+- miniDLNA listens now on port 8200, which is its standard port
+
 ## 0.0.1i
 - miniDLNA uses ingress for communication with other apps & HA-instances. So the "webui" is't meant for us humans.
 - General cleaning of all files
