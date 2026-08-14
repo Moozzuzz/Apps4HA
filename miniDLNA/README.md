@@ -3,7 +3,7 @@
 
 miniDLNA is a simple media (audio, pictures & video) server, which aims to be fully compliant with DLNA/UPnP-AV clients.
 
-This local app (HA-addon) provides a container for Home Assistant with miniDLNA. Based on work from [Drize](https://github.com/drize) & [Cavaliere78](https://github.com/cavaliere78) the former addon was updated to the latest HA approach for local apps, including apparmor etc. Current minidlna-version can be checked in the [alpine package details](https://pkgs.alpinelinux.org/package/edge/community/x86/minidlna).
+This local app (HA-addon) provides a container for Home Assistant with miniDLNA. Based on work from [Drize](https://github.com/drize) & [Cavaliere78](https://github.com/cavaliere78), the former addon was updated to the latest HA approach for local apps, including apparmor etc. Current minidlna-version can be checked in the [alpine package details](https://pkgs.alpinelinux.org/package/edge/community/x86/minidlna).
 
 ## Installation
 
