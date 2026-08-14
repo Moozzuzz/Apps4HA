@@ -68,3 +68,6 @@ For more detailed info on options: [Debian man page](https://manpages.debian.org
 
 ## Credits for miniDLNA (Readymedia)
 - https://sourceforge.net/projects/minidlna/files/minidlna
+
+## Contribute to this app (addon)
+Submit your translation as Feature-request or pull-request.
