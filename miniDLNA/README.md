@@ -7,7 +7,8 @@ This local app (HA-addon) provides a container for Home Assistant with miniDLNA.
 
 ## Installation
 
-Copy the url of [this repository](https://github.com/Moozzuzz/HA-addons) `https://github.com/Moozzuzz/HA-addons` into [Config](https://my.home-assistant.io/redirect/config) ⇢ Apps ⇢ [App-store](https://my.home-assistant.io/redirect/supervisor_store/) ⇢ ⋮ *(right upper corner)* ⇢ "Repositories". Once this repository has been succesfully added, search for *minidlna*, select the app and install it. 
+Add this repository to your [App-store](https://my.home-assistant.io/redirect/supervisor_store/). You can do so, by browsing to the App-store: [Config](https://my.home-assistant.io/redirect/config) ⇢ Apps ⇢ [App-store](https://my.home-assistant.io/redirect/supervisor_store/) ⇢ ⋮  ⇢ **Repositories**. Copy the url of [this repository](https://github.com/Moozzuzz/HA-addons) `https://github.com/Moozzuzz/HA-addons` into the list.
+Once this repository has been succesfully added, search for *minidlna*, select the app and install it. 
 
 ### Notes:
 HA generates a webui-button automatically, but this -very minimal- interface doesn't work (yet). You'll discover your server with [DLNA Digital Media Server](https://www.home-assistant.io/integrations/dlna_dms/) en in the [Media browser](https://my.home-assistant.io/redirect/media_browser).
