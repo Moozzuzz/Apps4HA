@@ -1,5 +1,5 @@
 name: "miniDLNA for Home Assistant (HA)"
-version: 0.0.1k
+version: 0.1.0
 description: "miniDLNA is a simple media (audio, pictures & video) server, which aims to be fully compliant with DLNA/UPnP-AV clients. This app (~addon) provides you with the latest miniDLNA on Alpine, ready to go."
 slug: minidlna
 
@@ -15,7 +15,7 @@ arch:
 
 ports:
   1900/udp: 1900
-  8200/tcp: 8200
+  8200: 8200
 
 map:
   - homeassistant_config:rw
