@@ -16,7 +16,7 @@ Please note [miniDLNA](https://sourceforge.net/projects/minidlna/files/minidlna)
 ## Example configuration 
 ```yaml
 media_dir: V,/media;/share
-options: -v
+options: -r
 ```
 
 ### Option `media_dir`
