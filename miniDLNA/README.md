@@ -22,9 +22,8 @@ options: -v
 ### Option `media_dir`
 
 Set this to the directory you want scanned.
-- if you want multiple directories, you can add ';' before each new directory
-  (eg. media_dir: /media;/share)
-- if you want to restrict a media_dir to specific content types, you
+- When you want to set multiple directories, seperate the directories with semicolons `;`  (eg. `media_dir: /media;/share`)
+- if you would like to restrict a media_dir to specific content type(s), you
   can prepend the types, followed by a comma, to the directory:
   - **A** for audio  (eg. `media_dir: A,/home/user_A/Music`)
   - **V** for video  (eg. `media_dir: V,/home/user_B/Videos`)
