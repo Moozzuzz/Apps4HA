@@ -74,4 +74,4 @@ Please note [miniDLNA](https://sourceforge.net/projects/minidlna/files/minidlna)
 
 
 ## Contribute to this app (addon)
-Submit your translation as Feature-request or pull-requ
+Submit your translation as Feature-request or pull-request
