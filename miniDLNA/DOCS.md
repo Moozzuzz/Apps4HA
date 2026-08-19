@@ -64,7 +64,7 @@ Define how the dlna-server presents itself on the network.
 
 
 
-## Bugs:
+## Bugs
 HA generates a webui-button automatically, but this -very minimal- status-page doesn't work (yet) as miniDLNA incorrectly assumes a DNS rebinding attack. You'll discover your server with [DLNA Digital Media Server](https://www.home-assistant.io/integrations/dlna_dms/) en in the [Media browser](https://my.home-assistant.io/redirect/media_browser).
 
 Please note [miniDLNA](https://sourceforge.net/projects/minidlna/files/minidlna) has a number of [open bugs](https://sourceforge.net/p/minidlna/bugs/). 
@@ -74,4 +74,4 @@ Please note [miniDLNA](https://sourceforge.net/projects/minidlna/files/minidlna)
 
 
 ## Contribute to this app (addon)
-Submit your translation as Feature-request or pull-request
+Submit your translation as Feature-request or pull-request.
