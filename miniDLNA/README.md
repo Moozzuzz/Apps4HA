@@ -7,7 +7,7 @@ This local app (HA-addon) provides a container for Home Assistant with miniDLNA.
 
 ## Installation
 
-Add this repository to your [App-store](https://my.home-assistant.io/redirect/supervisor_store/). You can do so, by browsing to the App-store: [Config](https://my.home-assistant.io/redirect/config) ⇢ Apps ⇢ [App-store](https://my.home-assistant.io/redirect/supervisor_store/) ⇢ ⋮  ⇢ **Repositories**. Copy the url of [this repository](https://github.com/Moozzuzz/HA-addons) `https://github.com/Moozzuzz/HA-addons` into the list.
+Add this repository to your [App-store](https://my.home-assistant.io/redirect/supervisor_store/). You can do so, by browsing to the App-store: [Config](https://my.home-assistant.io/redirect/config) ⇢ Apps ⇢ [App-store](https://my.home-assistant.io/redirect/supervisor_store/) ⇢ ⋮  ⇢ **Repositories**. Copy the url of [this repository](https://github.com/Moozzuzz/Apps4HA)) `https://github.com/Moozzuzz/HA-addons` into the list.
 
 Once this repository has been succesfully added, search for *minidlna*, select the app and install it. 
 
@@ -36,7 +36,7 @@ Set this to the directory you want scanned.
 ### Option `options`
 ```bash
 [-d] [-v] [-f config_file] [-p port] [-i network_interface] [-u uid_to_run_as]
-[-t notify_interval] [-P pid_filename] [-s serial] [-m model_number] [-w url] 
+[-t notify_interval] [-P pid_filename] [-s serial] [-m model_number] [-w presentation_url] 
 [-r] [-R] [-L] [-S] [-V] [-h]
 ```
 #### Configuration options
@@ -50,6 +50,7 @@ Set this to the directory you want scanned.
 - `-S` Stay foreground. Can be used when minidlnad is being managed by systemd
 - `-s serial` Serial number the daemon will report to clients in its XML description.
 - `-t notify_interval` Notify interval, in seconds; defaults to 895 seconds.
+- `-u uid_to_run_as` Run as different user (with `uid`)
 - `-w presentation_url` Sets the presentation url; the default is http address on port 80.
 
 #### Debugging options
@@ -62,7 +63,7 @@ Set this to the directory you want scanned.
 - Friendly name on the network
 
 #### Defined by HA
-- `-i interface` Network interface to listen on. Can be specified more than once.
+- `-i network_interface` Network interface to listen on. Can be specified more than once.
 
 For more detailed info on options: [Debian man page](https://manpages.debian.org/testing/minidlna/minidlnad.1.en.html) or [uex.se man page](https://man.uex.se/8/minidlnad).
 
