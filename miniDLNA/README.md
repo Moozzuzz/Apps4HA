@@ -20,5 +20,10 @@ HA generates a webui-button automatically, but this -very minimal- interface doe
 Please note [miniDLNA](https://sourceforge.net/projects/minidlna/files/minidlna) has a number of other open bugs too. 
 
 
+## Credits for miniDLNA (Readymedia)
+- https://sourceforge.net/projects/minidlna/files/minidlna
+
+
+
 ## Contribute to this app (addon)
 Thank you for submitting your translation as a Feature-request or a pull-request.
