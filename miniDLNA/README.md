@@ -41,7 +41,6 @@ Set this to the directory you want scanned.
 ```
 #### Configuration options
 - `-f config_file` Specify the location of the configuration file. Uses */etc/minidlna.conf* by default.
-- `-h` Displays helptext and exit.
 - `-L` Do not create playlists.
 - `-m model_number` Define model number the daemon will report to clients in its XML description.
 - `-P pid_filename` Define custom PID file to use; the default is */run/minidlna/minidlna.pid*.
@@ -55,17 +54,20 @@ Set this to the directory you want scanned.
 
 #### Debugging options
 - `-d` Activate debug mode (do not daemonize).
+- `-h` Displays helptext and exit.
 - `-V` Show the program version and exit.
 - `-v` Verbose output.
 
 #### Option defined via configuration (of this app)
 - `-p port` Defines port number to listen on.
-- Friendly name on the network
 
 #### Defined by HA
 - `-i network_interface` Network interface to listen on. Can be specified more than once.
 
 For more detailed info on options: [Debian man page](https://manpages.debian.org/testing/minidlna/minidlnad.1.en.html) or [uex.se man page](https://man.uex.se/8/minidlnad).
+
+### Option `Friendly_name`
+Define how the dlna-server presents itself on the network.
 
 ## Credits for miniDLNA (Readymedia)
 - https://sourceforge.net/projects/minidlna/files/minidlna
