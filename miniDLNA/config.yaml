@@ -1,5 +1,5 @@
 name: "miniDLNA for Home Assistant (HA)"
-version: 0.0.3
+version: 0.0.4
 description: "miniDLNA is a simple media (audio, pictures & video) server, which aims to be fully compliant with DLNA/UPnP-AV clients. This app (~addon) provides you with the latest miniDLNA on Alpine, ready to go."
 slug: minidlna
 
