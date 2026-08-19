@@ -12,6 +12,7 @@ ingress_port=$(bashio::addon.ingress_port)
 sed -i "s/%%port%%/${ingress_port}/g" /etc/minidlna.conf
 
 OPTIONS="$(bashio::config 'options')"
+bashio::log.info "> MiniDLNA options: $OPTIONS."
 
 MEDIA_DIR="$(bashio::config 'media_dir')"
 dirlist=$(echo $MEDIA_DIR | tr ";" "\n")
