@@ -1,15 +1,15 @@
 ARG BUILD_FROM
 FROM alpine AS builder
 
-ENV VERSION 0.12.1
-ENV LANG C.UTF-8
+ENV VERSION=0.12.1
+ENV LANG=C.UTF-8
 ENV TZ=Europe/Brussels
 
 ADD https://github.com/sabre-io/Baikal/releases/download/$VERSION/baikal-$VERSION.zip .
 RUN apk update
 RUN apk add unzip && unzip -q baikal-$VERSION.zip
 
-FROM nginx:alpine
+FROM nginx:alpine AS nginx
 
 RUN apk add --no-cache                \
             php85                       \
