@@ -4,7 +4,7 @@ description: Lightweight CalDAV+CardDAV server
 slug: baikal
 
 # tot aan de echte locatie
-url: https://github.com/Moozzuzz/HA-addons
+url: https://github.com/Moozzuzz/Apps4HA/tree/main/Baikal
 arch: 
   - aarch64
   - amd64
@@ -26,8 +26,9 @@ backup: cold
 host_network: "true"
 ports: 
   80/tcp: 8013
-ports_description:
-  80/tcp: Web UI port
+
+#ports_description:
+#  80/tcp: Web UI port
 ingress: "true"
 ingress_port: "8013"
 webui: "[PROTO:ssl]://[HOST]:[PORT:80]"
