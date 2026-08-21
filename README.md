@@ -4,5 +4,5 @@ Apps (formerly addons) for home-assistant
 [miniDLNA](https://github.com/Moozzuzz/HA-addons/tree/main/miniDLNA) is a lightweight DLNA server. Working addon.
 
 ### Ongoing
-*Bailkal*: still figuring out how to get it to work in HA.
+*Baikal*: still figuring out how to get it to work in HA.
 
