@@ -14,8 +14,6 @@ map:
   - ssl:rw
   - addons:rw
   - share:rw
- 
+
 devices: 
   /dev/net/tun
-
-
