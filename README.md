@@ -6,3 +6,7 @@ Apps (formerly addons) for home-assistant
 ### Ongoing
 *Baikal*: still figuring out how to get it to work in HA.
 
+| Syntax | Description |
+| --- | ----------- |
+| Header | Title |
+| Paragraph | Text |
