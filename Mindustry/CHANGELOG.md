@@ -107,25 +107,27 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### File Structure
 
 ```
-mindustry-server-addon/
-├── example/
-│   ├── config.yaml          # Addon configuration schema
+Apps4HA/
+├── Mindustry/
 │   ├── build.yaml           # Docker build config
+│   ├── CHANGELOG.md         # Release notes
+│   ├── config.yaml          # Addon configuration schema
+│   ├── CONTRIBUTING.md      # Contributing guidelines
 │   ├── Dockerfile           # Container definition
-│   ├── DOCS.md              # Addon documentation
+│   ├── DOCS.md              # Full documentation
+│   ├── LICENSE              # MIT License
+│   ├── QUICKSTART.md        # Quick start guide
 │   ├── app/
-│   │   ├── server.py        # REST API server
-│   │   ├── monitor.py       # Log monitor
+│   │   ├── server.py        # REST API (1000+ lines)
+│   │   ├── monitor.py       # Log monitoring
 │   │   ├── events.py        # Event management
 │   │   ├── utils.py         # Utilities
 │   │   └── integration.py   # Integration service
 │   └── rootfs/              # Container filesystem
-├── requirements.txt         # Python dependencies
-├── docker-compose.yml       # Dev environment
-├── README.md                # Main documentation
-├── QUICKSTART.md            # Quick start guide
-├── CONTRIBUTING.md          # Contribution guidelines
-└── CHANGELOG.md             # This file
+└── Z-support/
+    ├── requirements.txt     # Python dependencies
+    ├── docker-compose.yml   # Dev environment
+    └── DOCKER_DEV_GUIDE.md  # Docker guide
 ```
 
 ### Dependencies
@@ -137,15 +139,15 @@ mindustry-server-addon/
 - curl/wget
 
 **Python Packages**:
-- fastapi==0.104.1
-- uvicorn==0.24.0
-- websockets==12.0
-- pydantic==2.5.0
-- python-dotenv==1.0.0
-- aiofiles==23.2.1
-- psutil==5.9.6
-- pyyaml==6.0.1
-- retrying==1.3.4
+- fastapi==0.136.1
+- uvicorn==0.44.0
+- websockets==16.0
+- pydantic==2.12.5
+- python-dotenv==1.2.2
+- aiofiles==25.1.0
+- psutil==7.2.2
+- pyyaml==6.0.3
+- retrying==1.4.2
 
 ### Known Limitations
 
