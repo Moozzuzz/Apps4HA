@@ -151,7 +151,7 @@ Fixes #123
 ## Questions?
 
 - Open a [Discussion](https://github.com/Moozzuzz/mindustry-server-addon/discussions)
-- Comment on an Issue
+- Comment on an [Issue](https://github.com/Moozzuzz/Apps4HA/issues)
 - Contact the maintainer
 
 Thank you for contributing! 🎉
