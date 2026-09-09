@@ -1,6 +1,6 @@
 # Mindustry Server App for Home Assistant
 
-A complete Home Assistant addon that runs a Mindustry game server with REST API and WebSocket support for full integration with Home Assistant. Monitor and control your Mindustry server directly from Home Assistant automation and dashboards.
+A complete Home Assistant App that runs the latest version of the Mindustry game server with REST API and WebSocket support for full integration with Home Assistant. Monitor and control your Mindustry server directly from Home Assistant automation and dashboards.
 
 ## Features
 
