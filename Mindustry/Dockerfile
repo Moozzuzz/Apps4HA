@@ -16,10 +16,10 @@ RUN mkdir -p /app /mindustry /data /config
 WORKDIR /app
 
 # Copy Python requirements first for better caching
-COPY py3-requirements.txt .
+COPY Dockerfile-py3packages.txt .
 
 # Install Python dependencies
-RUN pip3 install --no-cache-dir -r py3-requirements.txt
+RUN pip3 install --no-cache-dir -r Dockerfile-py3packages.txt
 
 # Copy application code
 COPY app/ /app/
