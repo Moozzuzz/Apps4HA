@@ -10,7 +10,7 @@ Be respectful, inclusive, and constructive. We welcome all contributors.
 
 ### Reporting Bugs
 
-1. Check if the bug already exists: [Issues](https://github.com/Moozzuzz/mindustry-server-addon/issues)
+1. Check if the bug already exists: [Issues](https://github.com/Moozzuzz/Apps4HA/issues)
 2. Create a new issue with:
    - Clear description of the bug
    - Steps to reproduce
@@ -20,7 +20,7 @@ Be respectful, inclusive, and constructive. We welcome all contributors.
 
 ### Suggesting Features
 
-1. Check [Discussions](https://github.com/Moozzuzz/mindustry-server-addon/discussions)
+1. Check [Discussions](https://github.com/Moozzuzz/Apps4HA/discussions)
 2. Create a new discussion with:
    - Feature description
    - Use case/motivation
@@ -67,8 +67,8 @@ Be respectful, inclusive, and constructive. We welcome all contributors.
 
 ```bash
 # Clone your fork
-git clone https://github.com/YOUR_USERNAME/mindustry-server-addon
-cd mindustry-server-addon
+git clone https://github.com/YOUR_USERNAME/Apps4HA
+cd Apps4HA/Mindustry
 
 # Build and run
 docker-compose build
@@ -78,10 +78,10 @@ docker-compose up -d
 docker-compose logs -f
 
 # Get API key
-docker exec mindustry-server cat /data/api_key
+docker exec mindustry cat /data/api_key
 
 # Test API
-API_KEY=$(docker exec mindustry-server cat /data/api_key)
+API_KEY=$(docker exec mindustry cat /data/api_key)
 curl -H "Authorization: Bearer ${API_KEY}" \
   http://localhost:5000/api/server
 ```
