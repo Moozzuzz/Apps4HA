@@ -266,15 +266,19 @@ Real-time events include:
 - [Contributing Guide](CONTRIBUTING.md) - How to contribute
 - [Changelog](CHANGELOG.md) - Release history
 
-## Project Structure (to update!)
+## Project Structure
 
 ```
-mindustry-server-addon/
-├── example/
-│   ├── config.yaml          # Addon configuration schema
+Apps4HA/
+├── Mindustry/
 │   ├── build.yaml           # Docker build config
+│   ├── CHANGELOG.md         # Release notes
+│   ├── config.yaml          # Addon configuration schema
+│   ├── CONTRIBUTING.md      # Contributing guidelines
 │   ├── Dockerfile           # Container definition
 │   ├── DOCS.md              # Full documentation
+│   ├── LICENSE              # MIT License
+│   ├── QUICKSTART.md        # Quick start guide
 │   ├── app/
 │   │   ├── server.py        # REST API (1000+ lines)
 │   │   ├── monitor.py       # Log monitoring
@@ -282,14 +286,10 @@ mindustry-server-addon/
 │   │   ├── utils.py         # Utilities
 │   │   └── integration.py   # Integration service
 │   └── rootfs/              # Container filesystem
-├── requirements.txt         # Python dependencies
-├── docker-compose.yml       # Dev environment
-├── README.md                # This file
-├── QUICKSTART.md            # Quick start guide
-├── DOCKER_DEV_GUIDE.md      # Docker guide
-├── CONTRIBUTING.md          # Contributing guidelines
-├── CHANGELOG.md             # Release notes
-└── LICENSE                  # MIT License
+└── Z-support/
+    ├── requirements.txt     # Python dependencies
+    ├── docker-compose.yml   # Dev environment
+    └── DOCKER_DEV_GUIDE.md  # Docker guide
 ```
 
 ## Contributing
