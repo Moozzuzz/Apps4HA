@@ -1,7 +1,7 @@
 #!/command/with-contenv bashio
 # shellcheck shell=bash
 # ==============================================================================
-# Mindustry Server Addon - Main Startup Script
+# Mindustry App - Main Startup Script
 # ==============================================================================
 
 set -e
@@ -11,7 +11,7 @@ BASHIO_LOG_LEVEL=$(bashio::config 'log_level')
 export BASHIO_LOG_LEVEL
 
 bashio::log.info "========================================"
-bashio::log.info "Mindustry Server Addon - Starting"
+bashio::log.info "Mindustry App - Starting"
 bashio::log.info "========================================"
 
 # ============================================================================
@@ -86,7 +86,7 @@ if [ ! -f /mindustry/server.jar ]; then
     bashio::log.error "Mindustry server JAR not found at /mindustry/server.jar"
     bashio::log.info "Attempting to download..."
     cd /mindustry
-    if ! wget -q https://github.com/Anuken/Mindustry/releases/download/v146/server-release.jar -O server.jar; then
+    if ! wget -q https://github.com/Anuken/Mindustry/releases/latest/download/server-release.jar -O server.jar; then
         bashio::log.error "Failed to download Mindustry server"
         exit 1
     fi
