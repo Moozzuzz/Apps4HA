@@ -1,4 +1,5 @@
-# apps 4 HA
+# Apps 4 HA
+
 Apps (formerly addons) for Home Assistant
 
 [![GitHub Release](https://img.shields.io/github/release/Moozzuzz/Apps4HA.svg)](https://github.com/Moozzuzz/Apps4HA/releases)
