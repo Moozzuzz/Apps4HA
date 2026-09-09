@@ -1,4 +1,4 @@
-# Mindustry Server Addon for Home Assistant
+# Mindustry Server App for Home Assistant
 
 A complete Home Assistant addon that runs a Mindustry game server with REST API and WebSocket support for full integration with Home Assistant. Monitor and control your Mindustry server directly from Home Assistant automation and dashboards.
 
@@ -45,13 +45,13 @@ A complete Home Assistant addon that runs a Mindustry game server with REST API 
 ### Installation on Home Assistant
 
 1. **Add Repository**
-   - Go to Settings → Add-ons → Add-on Store
+   - Go to Settings → Apps → App store
    - Click the menu (⋮) → Repositories
-   - Add: `https://github.com/Moozzuzz/mindustry-server-addon`
+   - Add: `https://github.com/Moozzuzz/Apps4HA`
    - Close and refresh
 
 2. **Install Addon**
-   - Search for "Mindustry Server"
+   - Search for "Mindustry"
    - Click Install
    - Wait for installation to complete
 
@@ -65,7 +65,7 @@ A complete Home Assistant addon that runs a Mindustry game server with REST API 
 
 5. **Get API Key**
    - SSH into Home Assistant
-   - Run: `docker exec addon_mindustry_server cat /data/api_key`
+   - Run: `docker exec addon_mindustry cat /data/api_key`
    - Save this key securely
 
 **See [QUICKSTART.md](QUICKSTART.md) for detailed step-by-step guide.**
@@ -125,7 +125,7 @@ wscat -c ws://localhost:5000/ws
 ```yaml
 sensor:
   - platform: rest
-    name: Mindustry Server
+    name: Mindustry game server
     resource: http://homeassistant.local:5000/api/server
     headers:
       Authorization: "Bearer YOUR_API_KEY_HERE"
@@ -266,7 +266,7 @@ Real-time events include:
 - [Contributing Guide](CONTRIBUTING.md) - How to contribute
 - [Changelog](CHANGELOG.md) - Release history
 
-## Project Structure
+## Project Structure (to update!)
 
 ```
 mindustry-server-addon/
