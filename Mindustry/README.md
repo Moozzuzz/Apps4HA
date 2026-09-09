@@ -271,30 +271,30 @@ Real-time events include:
 ```
 Apps4HA/
 ├── Mindustry/
-│   ├── build.yaml           # Docker build config
-│   ├── CHANGELOG.md         # Release notes
-│   ├── config.yaml          # Addon configuration schema
-│   ├── CONTRIBUTING.md      # Contributing guidelines
-│   ├── Dockerfile           # Container definition
-│   ├── DOCS.md              # Full documentation
-│   ├── LICENSE              # MIT License
-│   ├── QUICKSTART.md        # Quick start guide
-│   ├── app/
-│   │   ├── server.py        # REST API (1000+ lines)
-│   │   ├── monitor.py       # Log monitoring
-│   │   ├── events.py        # Event management
-│   │   ├── utils.py         # Utilities
-│   │   └── integration.py   # Integration service
-│   └── rootfs/              # Container filesystem
-└── Z-support/
-    ├── requirements.txt     # Python dependencies
-    ├── docker-compose.yml   # Dev environment
-    └── DOCKER_DEV_GUIDE.md  # Docker guide
+    ├── build.yaml               # Docker build config
+    ├── CHANGELOG.md             # Release notes
+    ├── config.yaml              # Addon configuration schema
+    ├── CONTRIBUTING.md          # Contributing guidelines
+    ├── Dockerfile               # Container definition
+    ├── Dockerfile-py3packages   # Python dependencies
+    ├── DOCS.md                  # Full documentation
+    ├── LICENSE                  # MIT License
+    ├── QUICKSTART.md            # Quick start guide
+    ├── app/
+    │   ├── server.py            # REST API
+    │   ├── monitor.py           # Log monitoring
+    │   ├── events.py            # Event management
+    │   ├── utils.py             # Utilities
+    │   └── integration.py       # Integration service
+    ├── rootfs/                  # Container filesystem
+    └── Z-support/
+        ├── docker-compose.yml   # Dev environment
+        └── DOCKER_DEV_GUIDE.md  # Docker guide
 ```
 
 ## Contributing
 
-Contributions are welcome! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for details.
+Contributions are welcome! Please see [CONTRIBUTING](CONTRIBUTING.md) for details.
 
 ## License
 
