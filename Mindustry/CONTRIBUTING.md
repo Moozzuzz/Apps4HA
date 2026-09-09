@@ -20,7 +20,7 @@ Be respectful, inclusive, and constructive. We welcome all contributors.
 
 ### Suggesting Features
 
-1. Check [Discussions](https://github.com/Moozzuzz/Apps4HA/discussions)
+1. Check [Issues](https://github.com/Moozzuzz/Apps4HA/issues)
 2. Create a new discussion with:
    - Feature description
    - Use case/motivation
