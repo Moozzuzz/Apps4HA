@@ -14,13 +14,3 @@ boot: auto
 backup: cold
 
 auth_api: true
-
-options:
-  port: 6567
-  server_name: "My local mindustry server"
-  log_level: "warning"
-  max_players: 8
-  pvp: false
-  strict: false
-  auto_restart: true
-  restart_hour: 3
