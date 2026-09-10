@@ -73,6 +73,7 @@ LABEL \
     # org.opencontainers.image.created=${BUILD_DATE} \
     # org.opencontainers.image.revision=${BUILD_REF} \
     # org.opencontainers.image.version=${BUILD_VERSION}
+
 # Health check
 HEALTHCHECK --interval=30s --timeout=10s --start-period=40s --retries=3 \
     CMD curl -f http://localhost:5000/health || exit 1
