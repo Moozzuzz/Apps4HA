@@ -18,18 +18,9 @@ auth_api: true
 options:
   port: 6567
   server_name: "My local mindustry server"
-  log_level: warning
+  log_level: "warning"
   max_players: 8
   pvp: false
   strict: false
   auto_restart: true
   restart_hour: 3
-schema:
-  port: "port(1025,65535)"
-  server_name: "str(1,50)"
-  log_level: list(trace|debug|info|notice|warning|error|fatal)
-  max_players: "int(1,256)"
-  pvp: bool
-  strict: bool
-  auto_restart: bool
-  restart_hour: "int(0,23)"
