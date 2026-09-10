@@ -43,6 +43,7 @@ RUN mkdir -p /mindustry && \
 
 # Copy root filesystem (S6 overlay, scripts, etc.)
 RUN ls /
+RUN ls /etc/s6-overlay/s6-rc.d/user/contents.d
 RUN uname -r
 
 COPY rootfs /
