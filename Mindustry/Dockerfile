@@ -9,17 +9,26 @@ RUN apk add  --no-cache \
     'python3>3.11.8' \
     'py3-pip>23.3.1' \
     'coreutils>9.11' \
-    'bash>5.2.21'
+    'bash>5.2.21' \
+    'py3-fastapi>0.136.1' \
+    'uvicorn==0.44.0' \
+    'py3-websockets==16.0' \
+    'py3-pydantic==2.12.5' \
+    'py3-dotenv==1.2.2' \
+    'py3-aiofiles==25.1.0' \
+    'py3-psutil==7.2.2' \
+    'py3-pyaml==6.0.3' \
+    'py3-retrying==1.4.2' \
 
 # Create app directory structure
 RUN mkdir -p /app /mindustry /data /config
 WORKDIR /app
 
 # Copy Python requirements first for better caching
-COPY Dockerfile-py3packages.txt .
+# COPY Dockerfile-py3packages.txt .
 
 # Install Python dependencies
-RUN pip3 install --no-cache-dir -r Dockerfile-py3packages.txt
+# RUN pip3 install --no-cache-dir -r Dockerfile-py3packages.txt
 
 # Copy application code
 COPY app/ /app/
