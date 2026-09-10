@@ -23,6 +23,21 @@ backup: cold
 auth_api: true
 
 options:
-  test: test?
+  port: 6567
+  server_name: "My local mindustry server"
+  log_level: "warning"
+  max_players: 8
+  pvp: false
+  strict: false
+  auto_restart: true
+  restart_hour: 3
+
 schema:
-  test: str?
+  port: port
+  server_name: str
+  log_level: str
+  max_players: int
+  pvp: bool
+  strict: bool
+  auto_restart: bool
+  restart_hour: int(0,23)
