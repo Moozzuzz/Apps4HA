@@ -8,6 +8,10 @@ arch:
   - aarch64
   - amd64
 
+ports:
+  - 5000/tcp: 5000
+  - 6567/udp: 6567
+
 init: false
 startup: services
 boot: auto
