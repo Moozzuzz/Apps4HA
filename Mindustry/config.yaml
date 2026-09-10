@@ -1,5 +1,5 @@
 name: "Mindustry Game Server"
-version: 0.1.0.2
+version: 0.1.0.3
 slug: mindustry
 description: "Mindustry game server with Home Assistant integration."
 url: https://github.com/Moozzuzz/Apps4HA/tree/main/Mindustry
