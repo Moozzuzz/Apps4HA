@@ -18,7 +18,7 @@ RUN apk add  --no-cache \
     'py3-aiofiles>25.1.0' \
     'py3-psutil>7.2.2' \
     'py3-pyaml>6.0.3' \
-    'py3-retrying>1.4.2' \
+    'py3-retrying>1.4.2'
 
 # Create app directory structure
 RUN mkdir -p /app /mindustry /data /config
