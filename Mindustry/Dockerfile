@@ -51,13 +51,14 @@ RUN mkdir -p /mindustry && \
     if [ ! -f server.jar ]; then echo "Failed to download server"; exit 1; fi
 
 # Copy root filesystem (S6 overlay, scripts, etc.)
+WORKDIR /
 RUN ls /
 RUN ls /etc/s6-overlay/s6-rc.d/user
 RUN ls -ld /etc/s6-overlay/s6-rc.d/user
-RUN ls /etc/s6-overlay/s6-rc.d/user/contents.d
+RUN ls /etc/s6-overlay/s6-rc.d/app-init/
 RUN uname -r
 
-COPY rootfs /
+COPY rootfs/usr /usr
 
 # Make scripts executable
 RUN chmod +x /usr/bin/start-server.sh && \
