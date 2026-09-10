@@ -61,7 +61,7 @@ ARG BUILD_VERSION
 LABEL \
     io.hass.name="${BUILD_NAME}" \
     io.hass.description="${BUILD_DESCRIPTION}" \
-    io.hass.arch="aarch64|amd64"
+    io.hass.arch="aarch64|amd64" \
     io.hass.type="app" \
     # io.hass.version=${BUILD_VERSION} \
     # maintainer="Moozzuzz" \
