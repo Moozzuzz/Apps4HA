@@ -42,7 +42,12 @@ RUN mkdir -p /mindustry && \
     if [ ! -f server.jar ]; then echo "Failed to download server"; exit 1; fi
 
 # Copy root filesystem (S6 overlay, scripts, etc.)
-RUN ls
+RUN ls -ld /var/lib/docker
+RUN ls -ld /mnt/data/docker/
+RUN uname -r
+RUN aa-status | grep docker
+
+
 COPY rootfs /
 
 # Make scripts executable
