@@ -12,8 +12,8 @@ ports:
   5000/tcp: 5000
   6567/udp: 6567
 
-map:
-  - addon_config:rw
+#map:
+#  - addon_config:rw
 
 init: false
 startup: services
@@ -21,3 +21,8 @@ boot: auto
 backup: cold
 
 auth_api: true
+
+options:
+  test: test?
+schema:
+  test: str?
