@@ -1,5 +1,14 @@
 FROM ghcr.io/home-assistant/base:latest
 
+# Build arguments
+ARG BUILD_ARCH
+ARG BUILD_DATE
+ARG BUILD_DESCRIPTION
+ARG BUILD_NAME
+ARG BUILD_REF
+ARG BUILD_REPOSITORY
+ARG BUILD_VERSION
+
 # Install Java and system dependencies
 RUN apk add  --no-cache \
     'openjdk11-jre>11.0.20' \
@@ -43,6 +52,8 @@ RUN mkdir -p /mindustry && \
 
 # Copy root filesystem (S6 overlay, scripts, etc.)
 RUN ls /
+RUN ls /etc/s6-overlay/s6-rc.d/user
+RUN ls -ld /etc/s6-overlay/s6-rc.d/user
 RUN ls /etc/s6-overlay/s6-rc.d/user/contents.d
 RUN uname -r
 
@@ -60,15 +71,6 @@ RUN addgroup -g 1000 mindustry && \
 # Set permissions
 RUN chmod 755 /app && \
     chmod 755 /mindustry
-
-# Build arguments
-ARG BUILD_ARCH
-ARG BUILD_DATE
-ARG BUILD_DESCRIPTION
-ARG BUILD_NAME
-ARG BUILD_REF
-ARG BUILD_REPOSITORY
-ARG BUILD_VERSION
 
 # Labels
 LABEL \
