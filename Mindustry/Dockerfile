@@ -52,11 +52,6 @@ RUN mkdir -p /mindustry && \
 
 # Copy root filesystem (S6 overlay, scripts, etc.)
 WORKDIR /
-RUN ls /
-RUN ls /etc/s6-overlay/s6-rc.d/user
-RUN ls -ld /etc/s6-overlay/s6-rc.d/user
-RUN ls /etc/s6-overlay/s6-rc.d/app-init/
-RUN uname -r
 
 COPY rootfs/usr /usr
 
