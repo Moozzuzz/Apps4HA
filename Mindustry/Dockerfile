@@ -1,15 +1,15 @@
 FROM ghcr.io/home-assistant/base:latest
 
 # Install Java and system dependencies
-RUN apk add --no-cache \
-    openjdk11-jre=11.0.20_p8-r0 \
-    curl=8.5.0-r0 \
-    wget=1.25.0-r3 \
-    netcat-openbsd=1.10-r1 \
-    python3=3.11.8-r0 \
-    py3-pip=23.3.1-r0 \
-    coreutils=9.11-r0 \
-    bash=5.2.21-r0
+RUN apk add  --no-cache \
+    'openjdk11-jre>11.0.20' \
+    'curl>8.5.0' \
+    'wget>1.25.0' \
+    'netcat-openbsd>1.10' \
+    'python3>3.11.8' \
+    'py3-pip>23.3.1' \
+    'coreutils>9.11' \
+    'bash>5.2.21'
 
 # Create app directory structure
 RUN mkdir -p /app /mindustry /data /config
