@@ -9,8 +9,11 @@ arch:
   - amd64
 
 ports:
-  - 5000/tcp: 5000
-  - 6567/udp: 6567
+  5000/tcp: 5000
+  6567/udp: 6567
+
+map:
+  - addon_config:rw
 
 init: false
 startup: services
