@@ -60,8 +60,7 @@ WORKDIR /
 COPY rootfs/ /
 RUN echo "Start copy test" && \
     if [ ! -f /etc/s6-overlay/s6-rc.d/app-init/type ]; then echo "Copy failed: type file"; exit 1; fi && \
-    touch /etc/s6-overlay/s6-rc.d/app-init/type && \
-    touch /etc/s6-overlay/s6-rc.d/app-init/type2 && \
+    touch /etc/s6-overlay/s6-rc.d/app-init/type
 
 
 
