@@ -10,7 +10,7 @@ ARG BUILD_REPOSITORY
 ARG BUILD_VERSION
 
 # Install Java and system dependencies
-RUN apk add  --no-cache \
+RUN apk add  --no-cache vi \
     'openjdk11-jre>11.0.20' \
     'curl>8.5.0' \
     'wget>1.25.0' \
