@@ -1,4 +1,4 @@
-FRO M ghcr.io/home-assistant/base:latest
+FROM ghcr.io/home-assistant/base:latest
 
 # Build arguments
 ARG BUILD_ARCH
