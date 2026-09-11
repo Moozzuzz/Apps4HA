@@ -55,7 +55,7 @@ RUN mkdir -p /mindustry && \
 
 # Copy root filesystem (S6 overlay, scripts, etc.)
 WORKDIR /
-
+RUN mkdir -p /etc/s6-overlay/s6-rc.d/user/
 COPY rootfs/ /
 
 # Make scripts executable
