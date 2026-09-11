@@ -3,4 +3,4 @@
 # This runs before services are started
 
 multisubstitute { }
-s6-echo "Initializing Mindustry Server addon services"
+s6-echo "Initializing Mindustry Server addon services (init-addon)"
