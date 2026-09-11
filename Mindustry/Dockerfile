@@ -58,7 +58,8 @@ WORKDIR /
 # RUN mkdir -p /etc/s6-overlay/s6-rc.d/user/
 # RUN chmod 777 /etc/s6-overlay/s6-rc.d/user/ 
 COPY rootfs/ /
-RUN touch /etc/s6-overlay/s6-rc.d/app-init/type
+RUN if [ ! -f /etc/s6-overlay/s6-rc.d/app-init/type ]; then echo "Copy failed: type file"; exit 1; fi
+
 
 # Make scripts executable
 RUN chmod +x /usr/bin/start-server.sh && \
