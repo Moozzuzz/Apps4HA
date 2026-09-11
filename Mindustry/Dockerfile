@@ -55,11 +55,9 @@ RUN mkdir -p /mindustry && \
 
 # Copy root filesystem (S6 overlay, scripts, etc.)
 WORKDIR /
-RUN mkdir -p /etc/s6-overlay/s6-rc.d/user/
-RUN chmod 777 /etc/s6-overlay/s6-rc.d/user/ 
-# RUN cat /etc/s6-overlay/s6-rc.d/user/contents.d
-COPY rootfs/usr/ /usr
-COPY rootfs/etc/ /etc
+# RUN mkdir -p /etc/s6-overlay/s6-rc.d/user/
+# RUN chmod 777 /etc/s6-overlay/s6-rc.d/user/ 
+COPY rootfs/ /
 
 # Make scripts executable
 RUN chmod +x /usr/bin/start-server.sh && \
