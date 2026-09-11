@@ -45,6 +45,7 @@ COPY app/ /app/
 # Download Mindustry server
 RUN mkdir -p /mindustry && \
     cd /mindustry && \
+    echo "Start download Mindustry-server files" \
     wget -q https://github.com/Anuken/Mindustry/releases/latest/download/server-release.jar -O server.jar && \
     chmod +x server.jar && \
     # Verify download
@@ -53,7 +54,7 @@ RUN mkdir -p /mindustry && \
 # Copy root filesystem (S6 overlay, scripts, etc.)
 WORKDIR /
 
-COPY rootfs/usr /usr
+COPY rootfs/ /
 
 # Make scripts executable
 RUN chmod +x /usr/bin/start-server.sh && \
