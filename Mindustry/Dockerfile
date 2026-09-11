@@ -41,11 +41,13 @@ WORKDIR /app
 
 # Copy application code
 COPY app/ /app/
+RUN cd /app && \
+    if [ ! -f utils.py ]; then echo "Failed to copy app files"; exit 1; fi
 
 # Download Mindustry server
 RUN mkdir -p /mindustry && \
     cd /mindustry && \
-    echo "Start download Mindustry-server files" \
+    echo "Start download Mindustry-server files" && \
     wget -q https://github.com/Anuken/Mindustry/releases/latest/download/server-release.jar -O server.jar && \
     chmod +x server.jar && \
     # Verify download
