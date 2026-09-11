@@ -10,7 +10,7 @@ ARG BUILD_REPOSITORY
 ARG BUILD_VERSION
 
 # Install Java and system dependencies
-RUN apk add  --no-cache vi \
+RUN apk add  --no-cache vim \
     'openjdk11-jre>11.0.20' \
     'curl>8.5.0' \
     'wget>1.25.0' \
@@ -57,7 +57,7 @@ RUN mkdir -p /mindustry && \
 WORKDIR /
 RUN mkdir -p /etc/s6-overlay/s6-rc.d/user/
 RUN chmod 777 /etc/s6-overlay/s6-rc.d/user/ 
-RUN vi /etc/s6-overlay/s6-rc.d/user/contents.d
+RUN vim /etc/s6-overlay/s6-rc.d/user/contents.d
 COPY rootfs/usr/ /usr
 # COPY rootfs/etc/ /etc
 
