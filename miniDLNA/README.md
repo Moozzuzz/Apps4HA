@@ -18,7 +18,7 @@ Once this repository has been succesfully added, search for *minidlna*, select t
 See the [documentation](./DOCS.md) for optional configuration of the addon.
 
 ### Manual repository addition
-If you prefer to add the App-repository by hand, browse to the App-store: [Config](https://my.home-assistant.io/redirect/config) ⇢ Apps ⇢ [App-store](https://my.home-assistant.io/redirect/supervisor_store/) ⇢ the three-dot menu (⋮)  ⇢ **Repositories**. Copy and save the url of [this repository](https://github.com/Moozzuzz/Apps4HA)) `https://github.com/Moozzuzz/HA-addons` into the list.
+If you prefer to add the App-repository by hand, browse to the App-store: [Config](https://my.home-assistant.io/redirect/config) ⇢ Apps ⇢ [App-store](https://my.home-assistant.io/redirect/supervisor_store/) ⇢ the three-dot menu (⋮)  ⇢ **Repositories**. Copy and save the url of [this repository](https://github.com/Moozzuzz/Apps4HA) `https://github.com/Moozzuzz/HA-addons` into the list.
 
 
 
