@@ -25,8 +25,11 @@ PVP=$(bashio::config 'pvp')
 STRICT=$(bashio::config 'strict')
 AUTO_RESTART=$(bashio::config 'auto_restart')
 RESTART_HOUR=$(bashio::config 'restart_hour')
+VERSION=$(bashio::config 'version')
+
 
 bashio::log.info "Configuration loaded:"
+bashio::log.info "  Port: ${VERSION}"
 bashio::log.info "  Port: ${PORT}"
 bashio::log.info "  Server Name: ${SERVER_NAME}"
 bashio::log.info "  Max Players: ${MAX_PLAYERS}"
