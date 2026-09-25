@@ -29,7 +29,7 @@ VERSION=$(bashio::config 'version')
 
 
 bashio::log.info "Configuration loaded:"
-bashio::log.info "  Port: ${VERSION}"
+bashio::log.info "  Version: ${VERSION}"
 bashio::log.info "  Port: ${PORT}"
 bashio::log.info "  Server Name: ${SERVER_NAME}"
 bashio::log.info "  Max Players: ${MAX_PLAYERS}"
@@ -57,6 +57,9 @@ export API_HOST="0.0.0.0"
 
 # Generate or load API key
 API_KEY_FILE="/data/api_key"
+touch "${API_KEY_FILE}"
+chmod 755 "${API_KEY_FILE}"
+
 if [ ! -f "${API_KEY_FILE}" ]; then
     bashio::log.notice "Generating API key..."
     API_KEY=$(python3 -c "import secrets; print(secrets.token_urlsafe(32))")
@@ -67,7 +70,7 @@ else
 fi
 
 export API_KEY
-bashio::log.notice "API Key: ${API_KEY:0:10}... (stored in /data/api_key)"
+bashio::log.notice "API Key: ${API_KEY:0:10}... (stored in ${API_KEY_FILE})"
 
 # ============================================================================
 # Verify Java Installation
