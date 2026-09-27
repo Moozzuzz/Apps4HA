@@ -5,6 +5,10 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.1.0.13h] - 2026-09-27
+
+Migrate the user bundle to `/etc/s6-overlay/user-bundles.d`, the location s6-overlay 3.2.3.2 expects.
+
 ## [0.1.0] - 2026-09-09
 
 ### Added
