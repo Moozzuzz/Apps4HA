@@ -57,6 +57,7 @@ export API_HOST="0.0.0.0"
 
 # Generate or load API key
 API_KEY_FILE="/data/api_key"
+mkdir -p /data
 touch "${API_KEY_FILE}"
 chmod 755 "${API_KEY_FILE}"
 
@@ -225,4 +226,4 @@ bashio::log.info "Shutting down..."
 kill ${SERVER_PID} 2>/dev/null || true
 kill ${API_PID} 2>/dev/null || true
 wait 2>/dev/null || true
-bashio::log.notice "Mindustry Server Addon stopped"
+bashio::log.notice "Mindustry Server App stopped"
